@@ -1,0 +1,100 @@
+{% extends "html/base.html" %}
+
+{% block title %}Simulation Campaigns • PhishGuard{% endblock %}
+
+{% block content %}
+<div class="row g-4 mb-4">
+  <!-- Campaign Creation Form -->
+  <div class="col-lg-5">
+    <div class="cyber-card p-4">
+      <h5 class="text-light fw-bold mb-3">🎯 Create New Phishing Simulation</h5>
+      <form action="{{ url_for('create_campaign_route') }}" method="POST">
+        <div class="mb-3">
+          <label class="form-label small text-muted">Campaign Name</label>
+          <input type="text" class="form-control" name="name" required placeholder="e.g. Q4 Executive Phishing Drill">
+        </div>
+        <div class="mb-3">
+          <label class="form-label small text-muted">Phishing Attack Template</label>
+          <select class="form-select" name="template_type" required>
+            <option value="password_reset">Password Reset Impersonation</option>
+            <option value="invoice">Fake Overdue Invoice</option>
+            <option value="account_verification">Account Security Verification</option>
+            <option value="it_support">Mandatory IT Support Patch</option>
+            <option value="ceo_fraud">CEO / BEC Fraud Wire Request</option>
+            <option value="prize_winner">Reward / Prize Winner Scams</option>
+            <option value="delivery_notification">Package Delivery Notification</option>
+            <option value="social_media">Unusual Social Media Login</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label class="form-label small text-muted">Attack Sophistication Level</label>
+          <select class="form-select" name="sophistication">
+            <option value="basic">Basic (Noticeable Typos & Generic Salutations)</option>
+            <option value="intermediate" selected>Intermediate (Targeted Org Styling)</option>
+            <option value="advanced">Advanced (Spear-Phishing Personalization)</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label class="form-label small text-muted">Simulation Targets (Format: Name, Email, Department)</label>
+          <textarea class="form-control font-monospace small" name="targets" rows="5" required placeholder="Alice Smith, alice@example.com, Finance
+Bob Jones, bob@example.com, Engineering
+Carol White, carol@example.com, HR"></textarea>
+          <div class="form-text text-muted">One recipient per line separated by commas.</div>
+        </div>
+        <button type="submit" class="btn btn-primary w-100 fw-semibold">Create Campaign</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Campaign List -->
+  <div class="col-lg-7">
+    <div class="cyber-card p-4">
+      <h5 class="text-light fw-bold mb-3">Active & Historical Campaigns</h5>
+      <div class="table-responsive">
+        <table class="table table-cyber align-middle">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Template</th>
+              <th>Status</th>
+              <th>Targets</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% if campaigns %}
+              {% for c in campaigns %}
+              <tr>
+                <td class="text-light fw-semibold">{{ c.name }}</td>
+                <td><span class="badge bg-dark border border-secondary">{{ c.template_type }}</span></td>
+                <td>
+                  {% if c.status == 'launched' %}
+                    <span class="badge bg-success">Launched</span>
+                  {% else %}
+                    <span class="badge bg-secondary">Draft</span>
+                  {% endif %}
+                </td>
+                <td>{{ c.stats.total_targets }}</td>
+                <td>
+                  {% if c.status != 'launched' %}
+                    <form action="{{ url_for('launch_campaign_route', campaign_id=c.campaign_id) }}" method="POST" class="d-inline">
+                      <button type="submit" class="btn btn-sm btn-outline-warning">🚀 Launch</button>
+                    </form>
+                  {% else %}
+                    <a href="{{ url_for('campaign_detail_route', campaign_id=c.campaign_id) }}" class="btn btn-sm btn-outline-info">📊 Stats</a>
+                  {% endif %}
+                </td>
+              </tr>
+              {% endfor %}
+            {% else %}
+              <tr>
+                <td colspan="5" class="text-center text-muted py-4">No campaigns found.</td>
+              </tr>
+            {% endif %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

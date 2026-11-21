@@ -1,0 +1,43 @@
+{
+  "suspicious_keywords": [
+    "urgent", "immediately", "action required", "account suspended", "verify your account",
+    "password reset", "unauthorized login", "security alert", "billing failure", "invoice overdue",
+    "payment declined", "tax refund", "wire transfer", "confirm identity", "unusual activity",
+    "limited time", "final notice", "gift card", "lottery winner", "cryptocurrency bonus",
+    "direct deposit", "payroll update", "c-level request", "confidential wire", "service deactivation",
+    "mailbox quota exceeded", "re-activate now", "update credentials", "fraud detected", "risk mitigation",
+    "suspicious transaction", "login attempt", "compromised password", "click here", "follow this link",
+    "download attachment", "open document", "enable macros", "fill out form", "secure message",
+    "encrypted document", "human resources update", "benefits enrollment", "covid relief payment", "w-2 form",
+    "employee review", "executive decision", "priority response", "time sensitive", "immediate action needed"
+  ],
+  "suspicious_sender_patterns": [
+    ".*noreply.*@(?!google|microsoft|apple|amazon|chase|paypal)",
+    ".*support.*@(?!google|microsoft|apple|amazon|paypal)",
+    ".*admin.*@.*\\.(tk|ml|ga|cf|gq|xyz|top|work|click)",
+    "\\d{5,}@.*",
+    ".*security.*@.*(mail|temp|10min).*",
+    ".*account.*@.*-(support|update|verify|help)\\..*"
+  ],
+  "suspicious_url_patterns": [
+    "https?://\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}(/.*)?",
+    "https?://.*(bit\\.ly|tinyurl\\.com|t\\.co|is\\.gd|cutt\\.ly)/.*",
+    "https?://.*@.*",
+    "https?://.*(google|paypal|microsoft|apple|netflix|amazon).*\\.(tk|ml|ga|cf|gq|xyz|top|work|click)",
+    "https?://.*-account-verify\\..*",
+    "https?://.*-login-portal\\..*",
+    "https?://.*update-credentials\\..*"
+  ],
+  "impersonated_brands": [
+    { "name": "Google", "legit_domains": ["google.com", "gmail.com", "accounts.google.com"] },
+    { "name": "Microsoft", "legit_domains": ["microsoft.com", "outlook.com", "live.com", "office.com"] },
+    { "name": "Apple", "legit_domains": ["apple.com", "icloud.com"] },
+    { "name": "PayPal", "legit_domains": ["paypal.com"] },
+    { "name": "Amazon", "legit_domains": ["amazon.com", "aws.amazon.com"] },
+    { "name": "Netflix", "legit_domains": ["netflix.com"] },
+    { "name": "Chase Bank", "legit_domains": ["chase.com"] },
+    { "name": "Bank of America", "legit_domains": ["bankofamerica.com"] },
+    { "name": "Wells Fargo", "legit_domains": ["wellsfargo.com"] },
+    { "name": "Meta/Facebook", "legit_domains": ["facebook.com", "meta.com", "instagram.com"] }
+  ]
+}

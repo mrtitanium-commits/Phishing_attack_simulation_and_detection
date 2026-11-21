@@ -1,0 +1,174 @@
+{% extends "html/base.html" %}
+
+{% block title %}Dashboard • PhishGuard{% endblock %}
+
+{% block content %}
+<div class="row g-3 mb-4">
+  <!-- Metrics Cards -->
+  <div class="col-xl-3 col-md-6">
+    <div class="cyber-card p-3">
+      <div class="d-flex align-items-center justify-content-between">
+        <div>
+          <div class="stat-label">Total Campaigns</div>
+          <div class="stat-value">{{ total_campaigns }}</div>
+        </div>
+        <div class="stat-icon bg-primary bg-opacity-25 text-primary">🎯</div>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-3 col-md-6">
+    <div class="cyber-card p-3">
+      <div class="d-flex align-items-center justify-content-between">
+        <div>
+          <div class="stat-label">Simulated Emails</div>
+          <div class="stat-value">{{ total_emails_sent }}</div>
+        </div>
+        <div class="stat-icon bg-info bg-opacity-25 text-info">📨</div>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-3 col-md-6">
+    <div class="cyber-card p-3">
+      <div class="d-flex align-items-center justify-content-between">
+        <div>
+          <div class="stat-label">Click-Through Rate</div>
+          <div class="stat-value text-warning">{{ avg_click_rate }}%</div>
+        </div>
+        <div class="stat-icon bg-warning bg-opacity-25 text-warning">⚡</div>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-3 col-md-6">
+    <div class="cyber-card p-3">
+      <div class="d-flex align-items-center justify-content-between">
+        <div>
+          <div class="stat-label">Detection / Report Rate</div>
+          <div class="stat-value text-success">{{ avg_report_rate }}%</div>
+        </div>
+        <div class="stat-icon bg-success bg-opacity-25 text-success">🛡️</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Charts Section -->
+<div class="row g-3 mb-4">
+  <div class="col-lg-8">
+    <div class="cyber-card p-4">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h6 class="text-light fw-bold m-0">Campaign Simulation Metrics</h6>
+        <span class="badge bg-secondary text-light">Live Awareness Tracking</span>
+      </div>
+      <div style="height: 280px;">
+        <canvas id="campaignTrendsChart"></canvas>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="cyber-card p-4">
+      <h6 class="text-light fw-bold mb-3">Target Interaction Funnel</h6>
+      <div style="height: 280px;" class="d-flex align-items-center justify-content-center">
+        <canvas id="funnelChart"></canvas>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Recent Campaigns Table -->
+<div class="cyber-card p-4">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h6 class="text-light fw-bold m-0">Recent Phishing Simulation Campaigns</h6>
+    <a href="{{ url_for('campaigns') }}" class="btn btn-sm btn-outline-info">Manage All Campaigns</a>
+  </div>
+  <div class="table-responsive">
+    <table class="table table-cyber align-middle">
+      <thead>
+        <tr>
+          <th>Campaign</th>
+          <th>Template</th>
+          <th>Status</th>
+          <th>Targets</th>
+          <th>Click Rate</th>
+          <th>Cred Submission</th>
+          <th>Risk Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% if campaigns %}
+          {% for c in campaigns[:5] %}
+          <tr>
+            <td class="fw-semibold text-light">{{ c.name }}</td>
+            <td><span class="badge bg-dark border border-secondary">{{ c.template_type }}</span></td>
+            <td>
+              {% if c.status == 'launched' %}
+                <span class="badge bg-success">Launched</span>
+              {% else %}
+                <span class="badge bg-secondary">Draft</span>
+              {% endif %}
+            </td>
+            <td>{{ c.stats.total_targets }}</td>
+            <td class="text-warning fw-semibold">{{ c.stats.click_rate }}%</td>
+            <td class="text-danger fw-semibold">{{ c.stats.submission_rate }}%</td>
+            <td>
+              <span class="badge {% if c.stats.risk_score > 50 %}badge-high{% elif c.stats.risk_score > 25 %}badge-medium{% else %}badge-safe{% endif %}">
+                {{ c.stats.risk_score }}
+              </span>
+            </td>
+          </tr>
+          {% endfor %}
+        {% else %}
+          <tr>
+            <td colspan="7" class="text-center text-muted py-4">
+              No campaigns created yet. Click "Manage All Campaigns" to create your first simulation!
+            </td>
+          </tr>
+        {% endif %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  const ctxTrends = document.getElementById('campaignTrendsChart').getContext('2d');
+  new Chart(ctxTrends, {
+    type: 'bar',
+    data: {
+      labels: ['IT Support Update', 'CEO Urgent Wire', 'Password Expiry', 'Q4 Invoice Review', 'Package Delivery'],
+      datasets: [
+        { label: 'Opened (%)', data: [75, 60, 85, 45, 68], backgroundColor: 'rgba(59, 130, 246, 0.7)' },
+        { label: 'Clicked (%)', data: [38, 25, 42, 18, 30], backgroundColor: 'rgba(245, 158, 11, 0.7)' },
+        { label: 'Submitted Creds (%)', data: [15, 8, 22, 5, 12], backgroundColor: 'rgba(239, 68, 68, 0.7)' }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: { legend: { labels: { color: '#94a3b8' } } },
+      scales: {
+        x: { ticks: { color: '#94a3b8' }, grid: { color: '#1e293b' } },
+        y: { ticks: { color: '#94a3b8' }, grid: { color: '#1e293b' }, max: 100 }
+      }
+    }
+  });
+
+  const ctxFunnel = document.getElementById('funnelChart').getContext('2d');
+  new Chart(ctxFunnel, {
+    type: 'doughnut',
+    data: {
+      labels: ['Safely Ignored / Reported', 'Opened Only', 'Clicked Link', 'Creds Submitted'],
+      datasets: [{
+        data: [45, 30, 15, 10],
+        backgroundColor: ['#10b981', '#3b82f6', '#f59e0b', '#ef4444'],
+        borderWidth: 0
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: { legend: { position: 'bottom', labels: { color: '#94a3b8', boxWidth: 12 } } }
+    }
+  });
+</script>
+{% endblock %}

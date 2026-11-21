@@ -1,0 +1,602 @@
+[
+  {
+    "subject": "Invoice #98214 Overdue - Immediate Payment Demanded [Ref: #1042]",
+    "sender": "billing@acme-vendor-invoices.ml",
+    "body": "Attached is invoice INV-98214. Please pay the outstanding balance of ,520 immediately via wire transfer or click http://bit.ly/fake-pay to process payment.",
+    "label": 1
+  },
+  {
+    "subject": "Action Required: Reset your Microsoft Office 365 Password [Ref: #1041]",
+    "sender": "admin@micros0ft-portal.xyz",
+    "body": "Your corporate Office 365 password expires in 2 hours. Go to https://login-microsoft365-verify.top to renew your credentials.",
+    "label": 1
+  },
+  {
+    "subject": "Quarterly Financial Review Meeting Schedule [Update #141]",
+    "sender": "finance@company.com",
+    "body": "Please find the agenda for next Wednesday quarterly business review. Let me know if you have agenda additions.",
+    "label": 0
+  },
+  {
+    "subject": "IT Support: Urgent Security Patch Installation Required",
+    "sender": "helpdesk@corp-it-update.review",
+    "body": "A zero-day exploit has been detected. Please download and execute the attached security fix immediately: patch_v2.exe.",
+    "label": 1
+  },
+  {
+    "subject": "Google Calendar: Sprint Planning Reminder [Update #115]",
+    "sender": "calendar-notification@google.com",
+    "body": "Reminder: Sprint Planning with Product Team starts in 15 minutes in Conference Room B and Google Meet.",
+    "label": 0
+  },
+  {
+    "subject": "Team Sync Notes - Nov 21",
+    "sender": "alex.smith@company.com",
+    "body": "Hi everyone, here are the action items from our morning engineering sync. Please update Jira tickets before Friday.",
+    "label": 0
+  },
+  {
+    "subject": "Action Required: Reset your Microsoft Office 365 Password",
+    "sender": "admin@micros0ft-portal.xyz",
+    "body": "Your corporate Office 365 password expires in 2 hours. Go to https://login-microsoft365-verify.top to renew your credentials.",
+    "label": 1
+  },
+  {
+    "subject": "Team Sync Notes - Nov 21 [Update #120]",
+    "sender": "alex.smith@company.com",
+    "body": "Hi everyone, here are the action items from our morning engineering sync. Please update Jira tickets before Friday.",
+    "label": 0
+  },
+  {
+    "subject": "Unusual Sign-in Attempt on Your Google Account [Ref: #1015]",
+    "sender": "no-reply@g00gle-accounts-sec.work",
+    "body": "Someone from Moscow attempted to sign in to your Gmail. Review and secure your credentials here: http://secure-google-login.click.",
+    "label": 1
+  },
+  {
+    "subject": "Conference Registration Confirmation - PyCon 2026 [Update #128]",
+    "sender": "registration@pycon.org",
+    "body": "Thank you for registering for PyCon 2026. Your attendee badge and schedule details are confirmed.",
+    "label": 0
+  },
+  {
+    "subject": "Weekly Engineering Newsletter: Issue #42 [Update #123]",
+    "sender": "newsletter@engineering-digest.org",
+    "body": "In this weeks edition we cover distributed systems design, Python 3.12 performance improvements, and modern observability.",
+    "label": 0
+  },
+  {
+    "subject": "Urgent: Your PayPal Account Has Been Suspended [Ref: #1010]",
+    "sender": "security@paypa1-update.tk",
+    "body": "Dear customer, suspicious activity was detected on your account. Please click here http://192.168.0.1/verify to confirm your password and card details immediately or your account will be locked in 24 hours.",
+    "label": 1
+  },
+  {
+    "subject": "Google Calendar: Sprint Planning Reminder",
+    "sender": "calendar-notification@google.com",
+    "body": "Reminder: Sprint Planning with Product Team starts in 15 minutes in Conference Room B and Google Meet.",
+    "label": 0
+  },
+  {
+    "subject": "Your monthly statement is ready for review",
+    "sender": "service@chase.com",
+    "body": "Your monthly account statement for ending in 4102 is now available online. Log in to your Chase account to view statement.",
+    "label": 0
+  },
+  {
+    "subject": "Your Amazon.com order #112-9842103 has shipped [Update #122]",
+    "sender": "shipment-tracking@amazon.com",
+    "body": "Your package with items from your recent purchase has shipped and will arrive on Monday. Track in your Amazon app.",
+    "label": 0
+  },
+  {
+    "subject": "Unusual Sign-in Attempt on Your Google Account [Ref: #1045]",
+    "sender": "no-reply@g00gle-accounts-sec.work",
+    "body": "Someone from Moscow attempted to sign in to your Gmail. Review and secure your credentials here: http://secure-google-login.click.",
+    "label": 1
+  },
+  {
+    "subject": "Netflix: Membership On Hold Due to Billing Issue [Ref: #1048]",
+    "sender": "support@netflix-update-billing.loan",
+    "body": "We were unable to validate your billing information for next billing cycle. Please update payment method at https://netflix-recovery.party.",
+    "label": 1
+  },
+  {
+    "subject": "Your Amazon.com order #112-9842103 has shipped [Update #142]",
+    "sender": "shipment-tracking@amazon.com",
+    "body": "Your package with items from your recent purchase has shipped and will arrive on Monday. Track in your Amazon app.",
+    "label": 0
+  },
+  {
+    "subject": "Your monthly statement is ready for review [Update #126]",
+    "sender": "service@chase.com",
+    "body": "Your monthly account statement for ending in 4102 is now available online. Log in to your Chase account to view statement.",
+    "label": 0
+  },
+  {
+    "subject": "HR Notice: Mandatory Health Benefits Enrollment Update [Ref: #1037]",
+    "sender": "hr@internal-benefits-update.info",
+    "body": "All employees must re-verify their personal banking information for direct deposit before tomorrow: http://company-hr-portal.club.",
+    "label": 1
+  },
+  {
+    "subject": "Urgent: Your PayPal Account Has Been Suspended [Ref: #1030]",
+    "sender": "security@paypa1-update.tk",
+    "body": "Dear customer, suspicious activity was detected on your account. Please click here http://192.168.0.1/verify to confirm your password and card details immediately or your account will be locked in 24 hours.",
+    "label": 1
+  },
+  {
+    "subject": "Action Required: Reset your Microsoft Office 365 Password [Ref: #1021]",
+    "sender": "admin@micros0ft-portal.xyz",
+    "body": "Your corporate Office 365 password expires in 2 hours. Go to https://login-microsoft365-verify.top to renew your credentials.",
+    "label": 1
+  },
+  {
+    "subject": "Invoice #98214 Overdue - Immediate Payment Demanded [Ref: #1032]",
+    "sender": "billing@acme-vendor-invoices.ml",
+    "body": "Attached is invoice INV-98214. Please pay the outstanding balance of ,520 immediately via wire transfer or click http://bit.ly/fake-pay to process payment.",
+    "label": 1
+  },
+  {
+    "subject": "Your monthly statement is ready for review [Update #146]",
+    "sender": "service@chase.com",
+    "body": "Your monthly account statement for ending in 4102 is now available online. Log in to your Chase account to view statement.",
+    "label": 0
+  },
+  {
+    "subject": "Team Sync Notes - Nov 21 [Update #130]",
+    "sender": "alex.smith@company.com",
+    "body": "Hi everyone, here are the action items from our morning engineering sync. Please update Jira tickets before Friday.",
+    "label": 0
+  },
+  {
+    "subject": "IT Support: Urgent Security Patch Installation Required [Ref: #1049]",
+    "sender": "helpdesk@corp-it-update.review",
+    "body": "A zero-day exploit has been detected. Please download and execute the attached security fix immediately: patch_v2.exe.",
+    "label": 1
+  },
+  {
+    "subject": "Weekly Engineering Newsletter: Issue #42 [Update #133]",
+    "sender": "newsletter@engineering-digest.org",
+    "body": "In this weeks edition we cover distributed systems design, Python 3.12 performance improvements, and modern observability.",
+    "label": 0
+  },
+  {
+    "subject": "DHL Express: Delivery Failed for Package #482914 [Ref: #1026]",
+    "sender": "tracking@dhl-package-reschedule.top",
+    "body": "We attempted delivery of your parcel today but failed. Please confirm your delivery address and pay the .50 redelivery fee at http://dhl-delivery.link.",
+    "label": 1
+  },
+  {
+    "subject": "Slack: New message from Sarah Connor [Update #137]",
+    "sender": "notification@slack.com",
+    "body": "Sarah sent a message in #security-team: Hey team, please review the draft policy document when you have a moment.",
+    "label": 0
+  },
+  {
+    "subject": "Congratulations! You won a ,000 Amazon Gift Card [Ref: #1033]",
+    "sender": "rewards@amaz0n-bonus.cf",
+    "body": "You have been randomly selected as our holiday winner! Claim your ,000 gift card right now by verifying your SSN and credit card at http://prize-claim.xyz.",
+    "label": 1
+  },
+  {
+    "subject": "Netflix: Membership On Hold Due to Billing Issue",
+    "sender": "support@netflix-update-billing.loan",
+    "body": "We were unable to validate your billing information for next billing cycle. Please update payment method at https://netflix-recovery.party.",
+    "label": 1
+  },
+  {
+    "subject": "HR Notice: Mandatory Health Benefits Enrollment Update [Ref: #1047]",
+    "sender": "hr@internal-benefits-update.info",
+    "body": "All employees must re-verify their personal banking information for direct deposit before tomorrow: http://company-hr-portal.club.",
+    "label": 1
+  },
+  {
+    "subject": "IT Maintenance Notice: Scheduled Network Maintenance this Saturday",
+    "sender": "it-ops@company.com",
+    "body": "Routine network firmware updates will take place this Saturday between 2 AM and 4 AM UTC. Brief downtime may occur.",
+    "label": 0
+  },
+  {
+    "subject": "Weekly Engineering Newsletter: Issue #42 [Update #113]",
+    "sender": "newsletter@engineering-digest.org",
+    "body": "In this weeks edition we cover distributed systems design, Python 3.12 performance improvements, and modern observability.",
+    "label": 0
+  },
+  {
+    "subject": "GitHub: Pull Request #145 merged into main [Update #124]",
+    "sender": "notifications@github.com",
+    "body": "Your pull request #145 (refactor: optimize cache eviction) has been approved and merged into branch main by reviewer.",
+    "label": 0
+  },
+  {
+    "subject": "CEO Request: Confidential Wire Transfer Needed Today [Ref: #1044]",
+    "sender": "ceo@executive-mail-desk.net",
+    "body": "I am currently in an all-day board meeting and cannot take calls. Please urgently wire ,500 to our new supplier before 4 PM. Details: http://transfer-portal.ga.",
+    "label": 1
+  },
+  {
+    "subject": "Conference Registration Confirmation - PyCon 2026 [Update #148]",
+    "sender": "registration@pycon.org",
+    "body": "Thank you for registering for PyCon 2026. Your attendee badge and schedule details are confirmed.",
+    "label": 0
+  },
+  {
+    "subject": "Your Amazon.com order #112-9842103 has shipped",
+    "sender": "shipment-tracking@amazon.com",
+    "body": "Your package with items from your recent purchase has shipped and will arrive on Monday. Track in your Amazon app.",
+    "label": 0
+  },
+  {
+    "subject": "Google Calendar: Sprint Planning Reminder [Update #135]",
+    "sender": "calendar-notification@google.com",
+    "body": "Reminder: Sprint Planning with Product Team starts in 15 minutes in Conference Room B and Google Meet.",
+    "label": 0
+  },
+  {
+    "subject": "Invoice #98214 Overdue - Immediate Payment Demanded [Ref: #1012]",
+    "sender": "billing@acme-vendor-invoices.ml",
+    "body": "Attached is invoice INV-98214. Please pay the outstanding balance of ,520 immediately via wire transfer or click http://bit.ly/fake-pay to process payment.",
+    "label": 1
+  },
+  {
+    "subject": "DHL Express: Delivery Failed for Package #482914 [Ref: #1036]",
+    "sender": "tracking@dhl-package-reschedule.top",
+    "body": "We attempted delivery of your parcel today but failed. Please confirm your delivery address and pay the .50 redelivery fee at http://dhl-delivery.link.",
+    "label": 1
+  },
+  {
+    "subject": "Congratulations! You won a ,000 Amazon Gift Card [Ref: #1023]",
+    "sender": "rewards@amaz0n-bonus.cf",
+    "body": "You have been randomly selected as our holiday winner! Claim your ,000 gift card right now by verifying your SSN and credit card at http://prize-claim.xyz.",
+    "label": 1
+  },
+  {
+    "subject": "IT Support: Urgent Security Patch Installation Required [Ref: #1039]",
+    "sender": "helpdesk@corp-it-update.review",
+    "body": "A zero-day exploit has been detected. Please download and execute the attached security fix immediately: patch_v2.exe.",
+    "label": 1
+  },
+  {
+    "subject": "Urgent: Your PayPal Account Has Been Suspended [Ref: #1040]",
+    "sender": "security@paypa1-update.tk",
+    "body": "Dear customer, suspicious activity was detected on your account. Please click here http://192.168.0.1/verify to confirm your password and card details immediately or your account will be locked in 24 hours.",
+    "label": 1
+  },
+  {
+    "subject": "Netflix: Membership On Hold Due to Billing Issue [Ref: #1018]",
+    "sender": "support@netflix-update-billing.loan",
+    "body": "We were unable to validate your billing information for next billing cycle. Please update payment method at https://netflix-recovery.party.",
+    "label": 1
+  },
+  {
+    "subject": "Your monthly statement is ready for review [Update #116]",
+    "sender": "service@chase.com",
+    "body": "Your monthly account statement for ending in 4102 is now available online. Log in to your Chase account to view statement.",
+    "label": 0
+  },
+  {
+    "subject": "Quarterly Financial Review Meeting Schedule [Update #111]",
+    "sender": "finance@company.com",
+    "body": "Please find the agenda for next Wednesday quarterly business review. Let me know if you have agenda additions.",
+    "label": 0
+  },
+  {
+    "subject": "Team Sync Notes - Nov 21 [Update #110]",
+    "sender": "alex.smith@company.com",
+    "body": "Hi everyone, here are the action items from our morning engineering sync. Please update Jira tickets before Friday.",
+    "label": 0
+  },
+  {
+    "subject": "HR Notice: Mandatory Health Benefits Enrollment Update",
+    "sender": "hr@internal-benefits-update.info",
+    "body": "All employees must re-verify their personal banking information for direct deposit before tomorrow: http://company-hr-portal.club.",
+    "label": 1
+  },
+  {
+    "subject": "CEO Request: Confidential Wire Transfer Needed Today [Ref: #1034]",
+    "sender": "ceo@executive-mail-desk.net",
+    "body": "I am currently in an all-day board meeting and cannot take calls. Please urgently wire ,500 to our new supplier before 4 PM. Details: http://transfer-portal.ga.",
+    "label": 1
+  },
+  {
+    "subject": "IT Maintenance Notice: Scheduled Network Maintenance this Saturday [Update #149]",
+    "sender": "it-ops@company.com",
+    "body": "Routine network firmware updates will take place this Saturday between 2 AM and 4 AM UTC. Brief downtime may occur.",
+    "label": 0
+  },
+  {
+    "subject": "DHL Express: Delivery Failed for Package #482914 [Ref: #1046]",
+    "sender": "tracking@dhl-package-reschedule.top",
+    "body": "We attempted delivery of your parcel today but failed. Please confirm your delivery address and pay the .50 redelivery fee at http://dhl-delivery.link.",
+    "label": 1
+  },
+  {
+    "subject": "Invoice #98214 Overdue - Immediate Payment Demanded",
+    "sender": "billing@acme-vendor-invoices.ml",
+    "body": "Attached is invoice INV-98214. Please pay the outstanding balance of ,520 immediately via wire transfer or click http://bit.ly/fake-pay to process payment.",
+    "label": 1
+  },
+  {
+    "subject": "Quarterly Financial Review Meeting Schedule",
+    "sender": "finance@company.com",
+    "body": "Please find the agenda for next Wednesday quarterly business review. Let me know if you have agenda additions.",
+    "label": 0
+  },
+  {
+    "subject": "DHL Express: Delivery Failed for Package #482914 [Ref: #1016]",
+    "sender": "tracking@dhl-package-reschedule.top",
+    "body": "We attempted delivery of your parcel today but failed. Please confirm your delivery address and pay the .50 redelivery fee at http://dhl-delivery.link.",
+    "label": 1
+  },
+  {
+    "subject": "Netflix: Membership On Hold Due to Billing Issue [Ref: #1038]",
+    "sender": "support@netflix-update-billing.loan",
+    "body": "We were unable to validate your billing information for next billing cycle. Please update payment method at https://netflix-recovery.party.",
+    "label": 1
+  },
+  {
+    "subject": "Conference Registration Confirmation - PyCon 2026",
+    "sender": "registration@pycon.org",
+    "body": "Thank you for registering for PyCon 2026. Your attendee badge and schedule details are confirmed.",
+    "label": 0
+  },
+  {
+    "subject": "Conference Registration Confirmation - PyCon 2026 [Update #118]",
+    "sender": "registration@pycon.org",
+    "body": "Thank you for registering for PyCon 2026. Your attendee badge and schedule details are confirmed.",
+    "label": 0
+  },
+  {
+    "subject": "Invoice #98214 Overdue - Immediate Payment Demanded [Ref: #1022]",
+    "sender": "billing@acme-vendor-invoices.ml",
+    "body": "Attached is invoice INV-98214. Please pay the outstanding balance of ,520 immediately via wire transfer or click http://bit.ly/fake-pay to process payment.",
+    "label": 1
+  },
+  {
+    "subject": "Your Amazon.com order #112-9842103 has shipped [Update #112]",
+    "sender": "shipment-tracking@amazon.com",
+    "body": "Your package with items from your recent purchase has shipped and will arrive on Monday. Track in your Amazon app.",
+    "label": 0
+  },
+  {
+    "subject": "CEO Request: Confidential Wire Transfer Needed Today [Ref: #1024]",
+    "sender": "ceo@executive-mail-desk.net",
+    "body": "I am currently in an all-day board meeting and cannot take calls. Please urgently wire ,500 to our new supplier before 4 PM. Details: http://transfer-portal.ga.",
+    "label": 1
+  },
+  {
+    "subject": "Unusual Sign-in Attempt on Your Google Account",
+    "sender": "no-reply@g00gle-accounts-sec.work",
+    "body": "Someone from Moscow attempted to sign in to your Gmail. Review and secure your credentials here: http://secure-google-login.click.",
+    "label": 1
+  },
+  {
+    "subject": "DHL Express: Delivery Failed for Package #482914",
+    "sender": "tracking@dhl-package-reschedule.top",
+    "body": "We attempted delivery of your parcel today but failed. Please confirm your delivery address and pay the .50 redelivery fee at http://dhl-delivery.link.",
+    "label": 1
+  },
+  {
+    "subject": "Slack: New message from Sarah Connor [Update #117]",
+    "sender": "notification@slack.com",
+    "body": "Sarah sent a message in #security-team: Hey team, please review the draft policy document when you have a moment.",
+    "label": 0
+  },
+  {
+    "subject": "Your Amazon.com order #112-9842103 has shipped [Update #132]",
+    "sender": "shipment-tracking@amazon.com",
+    "body": "Your package with items from your recent purchase has shipped and will arrive on Monday. Track in your Amazon app.",
+    "label": 0
+  },
+  {
+    "subject": "IT Support: Urgent Security Patch Installation Required [Ref: #1019]",
+    "sender": "helpdesk@corp-it-update.review",
+    "body": "A zero-day exploit has been detected. Please download and execute the attached security fix immediately: patch_v2.exe.",
+    "label": 1
+  },
+  {
+    "subject": "IT Maintenance Notice: Scheduled Network Maintenance this Saturday [Update #129]",
+    "sender": "it-ops@company.com",
+    "body": "Routine network firmware updates will take place this Saturday between 2 AM and 4 AM UTC. Brief downtime may occur.",
+    "label": 0
+  },
+  {
+    "subject": "Congratulations! You won a ,000 Amazon Gift Card [Ref: #1043]",
+    "sender": "rewards@amaz0n-bonus.cf",
+    "body": "You have been randomly selected as our holiday winner! Claim your ,000 gift card right now by verifying your SSN and credit card at http://prize-claim.xyz.",
+    "label": 1
+  },
+  {
+    "subject": "Team Sync Notes - Nov 21 [Update #140]",
+    "sender": "alex.smith@company.com",
+    "body": "Hi everyone, here are the action items from our morning engineering sync. Please update Jira tickets before Friday.",
+    "label": 0
+  },
+  {
+    "subject": "Urgent: Your PayPal Account Has Been Suspended [Ref: #1020]",
+    "sender": "security@paypa1-update.tk",
+    "body": "Dear customer, suspicious activity was detected on your account. Please click here http://192.168.0.1/verify to confirm your password and card details immediately or your account will be locked in 24 hours.",
+    "label": 1
+  },
+  {
+    "subject": "Urgent: Your PayPal Account Has Been Suspended",
+    "sender": "security@paypa1-update.tk",
+    "body": "Dear customer, suspicious activity was detected on your account. Please click here http://192.168.0.1/verify to confirm your password and card details immediately or your account will be locked in 24 hours.",
+    "label": 1
+  },
+  {
+    "subject": "Google Calendar: Sprint Planning Reminder [Update #145]",
+    "sender": "calendar-notification@google.com",
+    "body": "Reminder: Sprint Planning with Product Team starts in 15 minutes in Conference Room B and Google Meet.",
+    "label": 0
+  },
+  {
+    "subject": "Slack: New message from Sarah Connor",
+    "sender": "notification@slack.com",
+    "body": "Sarah sent a message in #security-team: Hey team, please review the draft policy document when you have a moment.",
+    "label": 0
+  },
+  {
+    "subject": "Weekly Engineering Newsletter: Issue #42 [Update #143]",
+    "sender": "newsletter@engineering-digest.org",
+    "body": "In this weeks edition we cover distributed systems design, Python 3.12 performance improvements, and modern observability.",
+    "label": 0
+  },
+  {
+    "subject": "Weekly Engineering Newsletter: Issue #42",
+    "sender": "newsletter@engineering-digest.org",
+    "body": "In this weeks edition we cover distributed systems design, Python 3.12 performance improvements, and modern observability.",
+    "label": 0
+  },
+  {
+    "subject": "IT Maintenance Notice: Scheduled Network Maintenance this Saturday [Update #139]",
+    "sender": "it-ops@company.com",
+    "body": "Routine network firmware updates will take place this Saturday between 2 AM and 4 AM UTC. Brief downtime may occur.",
+    "label": 0
+  },
+  {
+    "subject": "Unusual Sign-in Attempt on Your Google Account [Ref: #1025]",
+    "sender": "no-reply@g00gle-accounts-sec.work",
+    "body": "Someone from Moscow attempted to sign in to your Gmail. Review and secure your credentials here: http://secure-google-login.click.",
+    "label": 1
+  },
+  {
+    "subject": "Quarterly Financial Review Meeting Schedule [Update #121]",
+    "sender": "finance@company.com",
+    "body": "Please find the agenda for next Wednesday quarterly business review. Let me know if you have agenda additions.",
+    "label": 0
+  },
+  {
+    "subject": "GitHub: Pull Request #145 merged into main [Update #134]",
+    "sender": "notifications@github.com",
+    "body": "Your pull request #145 (refactor: optimize cache eviction) has been approved and merged into branch main by reviewer.",
+    "label": 0
+  },
+  {
+    "subject": "Slack: New message from Sarah Connor [Update #127]",
+    "sender": "notification@slack.com",
+    "body": "Sarah sent a message in #security-team: Hey team, please review the draft policy document when you have a moment.",
+    "label": 0
+  },
+  {
+    "subject": "GitHub: Pull Request #145 merged into main [Update #114]",
+    "sender": "notifications@github.com",
+    "body": "Your pull request #145 (refactor: optimize cache eviction) has been approved and merged into branch main by reviewer.",
+    "label": 0
+  },
+  {
+    "subject": "IT Support: Urgent Security Patch Installation Required [Ref: #1029]",
+    "sender": "helpdesk@corp-it-update.review",
+    "body": "A zero-day exploit has been detected. Please download and execute the attached security fix immediately: patch_v2.exe.",
+    "label": 1
+  },
+  {
+    "subject": "HR Notice: Mandatory Health Benefits Enrollment Update [Ref: #1027]",
+    "sender": "hr@internal-benefits-update.info",
+    "body": "All employees must re-verify their personal banking information for direct deposit before tomorrow: http://company-hr-portal.club.",
+    "label": 1
+  },
+  {
+    "subject": "Conference Registration Confirmation - PyCon 2026 [Update #138]",
+    "sender": "registration@pycon.org",
+    "body": "Thank you for registering for PyCon 2026. Your attendee badge and schedule details are confirmed.",
+    "label": 0
+  },
+  {
+    "subject": "Slack: New message from Sarah Connor [Update #147]",
+    "sender": "notification@slack.com",
+    "body": "Sarah sent a message in #security-team: Hey team, please review the draft policy document when you have a moment.",
+    "label": 0
+  },
+  {
+    "subject": "CEO Request: Confidential Wire Transfer Needed Today",
+    "sender": "ceo@executive-mail-desk.net",
+    "body": "I am currently in an all-day board meeting and cannot take calls. Please urgently wire ,500 to our new supplier before 4 PM. Details: http://transfer-portal.ga.",
+    "label": 1
+  },
+  {
+    "subject": "GitHub: Pull Request #145 merged into main",
+    "sender": "notifications@github.com",
+    "body": "Your pull request #145 (refactor: optimize cache eviction) has been approved and merged into branch main by reviewer.",
+    "label": 0
+  },
+  {
+    "subject": "Google Calendar: Sprint Planning Reminder [Update #125]",
+    "sender": "calendar-notification@google.com",
+    "body": "Reminder: Sprint Planning with Product Team starts in 15 minutes in Conference Room B and Google Meet.",
+    "label": 0
+  },
+  {
+    "subject": "Action Required: Reset your Microsoft Office 365 Password [Ref: #1011]",
+    "sender": "admin@micros0ft-portal.xyz",
+    "body": "Your corporate Office 365 password expires in 2 hours. Go to https://login-microsoft365-verify.top to renew your credentials.",
+    "label": 1
+  },
+  {
+    "subject": "IT Maintenance Notice: Scheduled Network Maintenance this Saturday [Update #119]",
+    "sender": "it-ops@company.com",
+    "body": "Routine network firmware updates will take place this Saturday between 2 AM and 4 AM UTC. Brief downtime may occur.",
+    "label": 0
+  },
+  {
+    "subject": "Your monthly statement is ready for review [Update #136]",
+    "sender": "service@chase.com",
+    "body": "Your monthly account statement for ending in 4102 is now available online. Log in to your Chase account to view statement.",
+    "label": 0
+  },
+  {
+    "subject": "Congratulations! You won a ,000 Amazon Gift Card [Ref: #1013]",
+    "sender": "rewards@amaz0n-bonus.cf",
+    "body": "You have been randomly selected as our holiday winner! Claim your ,000 gift card right now by verifying your SSN and credit card at http://prize-claim.xyz.",
+    "label": 1
+  },
+  {
+    "subject": "HR Notice: Mandatory Health Benefits Enrollment Update [Ref: #1017]",
+    "sender": "hr@internal-benefits-update.info",
+    "body": "All employees must re-verify their personal banking information for direct deposit before tomorrow: http://company-hr-portal.club.",
+    "label": 1
+  },
+  {
+    "subject": "Netflix: Membership On Hold Due to Billing Issue [Ref: #1028]",
+    "sender": "support@netflix-update-billing.loan",
+    "body": "We were unable to validate your billing information for next billing cycle. Please update payment method at https://netflix-recovery.party.",
+    "label": 1
+  },
+  {
+    "subject": "Action Required: Reset your Microsoft Office 365 Password [Ref: #1031]",
+    "sender": "admin@micros0ft-portal.xyz",
+    "body": "Your corporate Office 365 password expires in 2 hours. Go to https://login-microsoft365-verify.top to renew your credentials.",
+    "label": 1
+  },
+  {
+    "subject": "Unusual Sign-in Attempt on Your Google Account [Ref: #1035]",
+    "sender": "no-reply@g00gle-accounts-sec.work",
+    "body": "Someone from Moscow attempted to sign in to your Gmail. Review and secure your credentials here: http://secure-google-login.click.",
+    "label": 1
+  },
+  {
+    "subject": "GitHub: Pull Request #145 merged into main [Update #144]",
+    "sender": "notifications@github.com",
+    "body": "Your pull request #145 (refactor: optimize cache eviction) has been approved and merged into branch main by reviewer.",
+    "label": 0
+  },
+  {
+    "subject": "Congratulations! You won a ,000 Amazon Gift Card",
+    "sender": "rewards@amaz0n-bonus.cf",
+    "body": "You have been randomly selected as our holiday winner! Claim your ,000 gift card right now by verifying your SSN and credit card at http://prize-claim.xyz.",
+    "label": 1
+  },
+  {
+    "subject": "CEO Request: Confidential Wire Transfer Needed Today [Ref: #1014]",
+    "sender": "ceo@executive-mail-desk.net",
+    "body": "I am currently in an all-day board meeting and cannot take calls. Please urgently wire ,500 to our new supplier before 4 PM. Details: http://transfer-portal.ga.",
+    "label": 1
+  },
+  {
+    "subject": "Quarterly Financial Review Meeting Schedule [Update #131]",
+    "sender": "finance@company.com",
+    "body": "Please find the agenda for next Wednesday quarterly business review. Let me know if you have agenda additions.",
+    "label": 0
+  }
+]

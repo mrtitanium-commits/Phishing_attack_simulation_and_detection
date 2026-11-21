@@ -1,0 +1,66 @@
+{
+  "phishing_urls": [
+    {
+      "url": "http://192.168.1.100/secure-login/paypal/verify.php",
+      "risk_factors": ["ip_address", "http_only", "brand_impersonation", "suspicious_path"],
+      "expected_level": "CRITICAL"
+    },
+    {
+      "url": "http://g00gle.com.account-update.tk/signin",
+      "risk_factors": ["typosquatting", "suspicious_tld", "subdomain_abuse", "http_only"],
+      "expected_level": "CRITICAL"
+    },
+    {
+      "url": "https://paypal-security-verification.xyz/restore",
+      "risk_factors": ["brand_embedding", "suspicious_tld"],
+      "expected_level": "HIGH"
+    },
+    {
+      "url": "http://bit.ly/3xPqR9a",
+      "risk_factors": ["shortened_url", "http_only"],
+      "expected_level": "MEDIUM"
+    },
+    {
+      "url": "http://user:pass@legit-site.com.evil-phish.net/login",
+      "risk_factors": ["at_symbol", "subdomain_abuse", "http_only"],
+      "expected_level": "CRITICAL"
+    },
+    {
+      "url": "https://micros0ft-support.online/office365",
+      "risk_factors": ["homoglyph_or_typo", "uncommon_tld"],
+      "expected_level": "HIGH"
+    },
+    {
+      "url": "http://netflix-billing-renew.cf/portal",
+      "risk_factors": ["suspicious_tld", "brand_embedding", "http_only"],
+      "expected_level": "HIGH"
+    },
+    {
+      "url": "https://apple-id-verify.click/login?session=92847194821",
+      "risk_factors": ["suspicious_tld", "brand_embedding"],
+      "expected_level": "HIGH"
+    },
+    {
+      "url": "http://bankofamer1ca-alert.top/auth",
+      "risk_factors": ["typosquatting", "suspicious_tld", "http_only"],
+      "expected_level": "CRITICAL"
+    },
+    {
+      "url": "https://d1387fb8q37482.cloudfront-fake.net/amazon/confirm",
+      "risk_factors": ["high_entropy", "brand_in_path"],
+      "expected_level": "HIGH"
+    }
+  ],
+  "legitimate_urls": [
+    { "url": "https://www.google.com/search?q=cybersecurity", "expected_level": "SAFE" },
+    { "url": "https://accounts.google.com/signin", "expected_level": "SAFE" },
+    { "url": "https://www.microsoft.com/en-us/", "expected_level": "SAFE" },
+    { "url": "https://apple.com/iphone", "expected_level": "SAFE" },
+    { "url": "https://www.paypal.com/signin", "expected_level": "SAFE" },
+    { "url": "https://www.amazon.com/gp/css/order-history", "expected_level": "SAFE" },
+    { "url": "https://www.netflix.com/browse", "expected_level": "SAFE" },
+    { "url": "https://github.com/trending", "expected_level": "SAFE" },
+    { "url": "https://www.chase.com/personal/banking", "expected_level": "SAFE" },
+    { "url": "https://www.linkedin.com/feed/", "expected_level": "SAFE" }
+  ]
+}

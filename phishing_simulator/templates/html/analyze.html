@@ -1,0 +1,100 @@
+{% extends "html/base.html" %}
+
+{% block title %}Detection Engine • PhishGuard{% endblock %}
+
+{% block content %}
+<div class="row g-4">
+  <!-- Tab Navigation -->
+  <div class="col-12">
+    <ul class="nav nav-pills cyber-tabs gap-2 border-bottom border-secondary pb-3" id="analyzeTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="btn btn-outline-info active fw-semibold" id="url-tab" data-bs-toggle="tab" data-bs-target="#url-pane" type="button" role="tab">
+          🔗 Fake Website / URL Scanner
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="btn btn-outline-primary fw-semibold" id="email-tab" data-bs-toggle="tab" data-bs-target="#email-pane" type="button" role="tab">
+          📧 Email Filter & NLP/ML Inspector
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <div class="col-12">
+    <div class="tab-content" id="analyzeTabContent">
+      <!-- URL Inspection Pane -->
+      <div class="tab-pane fade show active" id="url-pane" role="tabpanel">
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="cyber-card p-4">
+              <h5 class="text-light fw-bold mb-3">🔗 URL Heuristic & Typosquatting Analyzer</h5>
+              <p class="text-muted small">
+                Evaluates homoglyphs, IP hostings, domain Shannon entropy, suspicious TLDs, and brand typosquatting.
+              </p>
+              <form id="urlAnalysisForm">
+                <div class="mb-3">
+                  <label class="form-label small text-muted">Target Web Address (URL)</label>
+                  <input type="text" class="form-control" id="targetUrl" required placeholder="http://g00gle.com.account-update.tk/login">
+                </div>
+                <div class="d-flex gap-2">
+                  <button type="submit" class="btn btn-info fw-semibold px-4">Analyze URL</button>
+                  <button type="button" class="btn btn-outline-secondary btn-sm" onclick="document.getElementById('targetUrl').value='http://192.168.1.100/secure-login/paypal/verify.php'">Load Sample Phish</button>
+                  <button type="button" class="btn btn-outline-secondary btn-sm" onclick="document.getElementById('targetUrl').value='https://accounts.google.com/signin'">Load Safe URL</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div id="urlResults" class="d-none"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Email Inspection Pane -->
+      <div class="tab-pane fade" id="email-pane" role="tabpanel">
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="cyber-card p-4">
+              <h5 class="text-light fw-bold mb-3">📧 Email Content & Social Engineering Analyzer</h5>
+              <p class="text-muted small">
+                Extracts psychological persuasion triggers (urgency, authority, scarcity), spoofing headers, and ML features.
+              </p>
+              <form id="emailAnalysisForm">
+                <div class="mb-3">
+                  <label class="form-label small text-muted">Sender Address</label>
+                  <input type="text" class="form-control" id="emailSender" required placeholder="security@paypa1-update.tk">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label small text-muted">Email Subject</label>
+                  <input type="text" class="form-control" id="emailSubject" required placeholder="URGENT: Your account has been suspended!">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label small text-muted">Email Body Content</label>
+                  <textarea class="form-control small" id="emailBody" rows="6" required placeholder="Dear customer, unusual activity was detected. Click here http://192.168.1.1/login immediately to verify your credentials. If you do not respond within 24 hours your account will be permanently closed."></textarea>
+                </div>
+                <div class="d-flex gap-2">
+                  <button type="submit" class="btn btn-primary fw-semibold px-4">Analyze Email Content</button>
+                  <button type="button" class="btn btn-outline-secondary btn-sm" onclick="loadSampleEmail()">Load Sample Phish</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div id="emailResults" class="d-none"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  function loadSampleEmail() {
+    document.getElementById('emailSender').value = 'admin@micros0ft-portal.xyz';
+    document.getElementById('emailSubject').value = 'Action Required: Your Office 365 Password Expires Today';
+    document.getElementById('emailBody').value = 'Dear Employee,\n\nYour corporate Microsoft account credentials will expire in 2 hours. Mandatory IT policy requires you to immediately verify your login.\n\nClick here: http://bit.ly/fake-ms-portal\n\nIT Support Operations';
+  }
+</script>
+{% endblock %}

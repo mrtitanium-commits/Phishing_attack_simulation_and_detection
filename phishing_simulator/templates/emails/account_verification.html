@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mandatory Account Verification</title>
+</head>
+<body style="margin: 0; padding: 20px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background-color: #f4f6f8;">
+  <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="background-color: #ffffff; border-radius: 8px; border: 1px solid #e1e4e8; overflow: hidden;">
+    <tr style="background-color: #0f172a; color: #ffffff;">
+      <td style="padding: 24px; text-align: center;">
+        <h2 style="margin: 0; font-size: 22px;">🛡️ {{sender_org}} Compliance Portal</h2>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 30px 24px;">
+        <p style="font-size: 16px; color: #24292e;">Hello {{target_name}},</p>
+        <p style="font-size: 14px; color: #586069; line-height: 1.6;">
+          In accordance with updated security policy regulations, all employees and accounts must complete a bi-annual verification of credentials and identity information.
+        </p>
+        <div style="background-color: #eff6ff; border-left: 4px solid #3b82f6; padding: 12px 16px; margin: 20px 0; border-radius: 4px;">
+          <p style="margin: 0; font-size: 13px; color: #1e40af; font-weight: 600;">
+            Notice: Verification must be completed within 24 hours to prevent single sign-on access disruption.
+          </p>
+        </div>
+        <div style="text-align: center; margin: 28px 0;">
+          <a href="{{phishing_link}}" style="background-color: #059669; color: #ffffff; text-decoration: none; padding: 14px 28px; border-radius: 6px; font-weight: bold; font-size: 15px; display: inline-block;">
+            Verify Credentials Now
+          </a>
+        </div>
+      </td>
+    </tr>
+    <tr style="background-color: #f6f8fa; border-top: 1px solid #e1e4e8;">
+      <td style="padding: 16px 24px; font-size: 11px; color: #6a737d; text-align: center;">
+        {{sender_org}} Information Security & Compliance Team
+      </td>
+    </tr>
+  </table>
+  {{tracking_pixel}}
+</body>
+</html>
